@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<VR_DisposalMethod>Disposal Method</VR_DisposalMethod>
+	<VR_Disposal_Smeltable>Smeltable</VR_Disposal_Smeltable>
+	<VR_Disposal_Burnable>Burnable</VR_Disposal_Burnable>
+	<VR_Disposal_Destroy>Destroy Only</VR_Disposal_Destroy>
+	<VR_Disposal_Smeltable_Desc>{0} can be destroyed by utilizing a smelting recipe.</VR_Disposal_Smeltable_Desc>
+	<VR_Disposal_Burnable_Desc>{0} can be destroyed by utilizing a burning recipe.</VR_Disposal_Burnable_Desc>
+	<VR_Disposal_Destroy_Desc>{0} can only be destroyed by means other than smelting or burning.</VR_Disposal_Destroy_Desc>
+</LanguageData>
