@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace RecycleType
+namespace DisposalType
 {
     [StaticConstructorOnStartup]
     public static class HarmonyPatches
