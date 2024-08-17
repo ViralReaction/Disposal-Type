@@ -18,13 +18,20 @@ namespace DisposalType
             }
             string label = __instance.label.ToString();
             label = Utility.CapitalizeFirstLetter(label);
-            if (__instance.IsApparel || __instance.IsWeapon)
+            bool burnable = __instance.smeltable;
+            bool smeltable = __instance.smeltable;
+            if (burnable && smeltable)
+            {
+                __result = __result.Concat(new StatDrawEntry(StatCategoryDefOf.BasicsNonPawn, "VR_DisposalMethod".Translate(), "VR_Disposal_Burnable_Smeltable".Translate(), "VR_Disposal_Burnable_Smeltable_Desc".Translate((string)label), 999));
+
+            }
+            else
             {
                 if (__instance.burnableByRecipe)
                 {
                     __result = __result.Concat(new StatDrawEntry(StatCategoryDefOf.BasicsNonPawn, "VR_DisposalMethod".Translate(), "VR_Disposal_Burnable".Translate(), "VR_Disposal_Burnable_Desc".Translate((string)label), 999));
                 }
-                else if (__instance.smeltable)
+                if (__instance.smeltable)
                 {
                     __result = __result.Concat(new StatDrawEntry(StatCategoryDefOf.BasicsNonPawn, "VR_DisposalMethod".Translate(), "VR_Disposal_Smeltable".Translate(), "VR_Disposal_Smeltable_Desc".Translate((string)label), 999));
                 }
